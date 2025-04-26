@@ -1,0 +1,394 @@
+/* Reset básico */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* Barra de rolagem Windows antiga */
+::-webkit-scrollbar {
+  width: 16px;
+  background: #000000;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #c0c0c0;
+  border: none;
+  box-shadow: none;
+}
+
+::-webkit-scrollbar-track {
+  background: #000000;
+  border: none;
+}
+
+::-webkit-scrollbar-button {
+  display: block;
+  width: 16px;
+  height: 16px;
+  background: #000000;
+  border: none;
+}
+
+/* Firefox */
+* {
+  scrollbar-color: #c0c0c0 #000000;
+  scrollbar-width: auto;
+}
+
+body {
+  font-family: 'Press Start 2P', cursive;
+  background-color: #c2c2c2;
+  color: #222;
+  padding: 40px 20px;
+  line-height: 1.6;
+}
+
+/* Header */
+header {
+  text-align: center;
+  margin-bottom: 80px;
+}
+
+.title-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 20px;
+}
+
+.title-emoji {
+  width: 80px;
+  height: 80px;
+  image-rendering: pixelated;
+  animation: float 3s ease-in-out infinite;
+  transform-origin: center;
+}
+
+@keyframes float {
+  0% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  25% {
+    transform: translateY(-6px) rotate(-2deg);
+  }
+
+  50% {
+    transform: translateY(0px) rotate(0deg);
+  }
+
+  75% {
+    transform: translateY(6px) rotate(2deg);
+  }
+
+  100% {
+    transform: translateY(0px) rotate(0deg);
+  }
+}
+
+header h1 {
+  font-size: 36px;
+  color: #1e5fe0;
+  text-shadow: 4px 4px 0px rgba(0, 0, 0, 0.1);
+}
+
+/* Ícones sociais */
+.social-icons {
+  display: flex;
+  justify-content: center;
+  gap: 20px;
+  margin-top: 20px;
+}
+
+.social-icon {
+  width: 32px;
+  height: 32px;
+  image-rendering: pixelated;
+  transition: transform 0.2s ease;
+}
+
+.social-icon:hover {
+  transform: scale(1.2);
+}
+
+/* Main content */
+.main-content {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 80px;
+  max-width: 1400px;
+  margin: 0 auto;
+}
+
+/* Janelinhas estilo Windows */
+.window {
+  width: 100%;
+  max-width: 900px;
+  background: #e0e0e0;
+  border: 3px solid black;
+  box-shadow: 8px 8px 0px #555;
+}
+
+/* Primeira janela em destaque */
+.main-window {
+  max-width: 1200px;
+  margin-bottom: 100px;
+  transform: scale(1);
+}
+
+.main-window .window-header {
+  padding: 16px 20px;
+  font-size: 16px;
+}
+
+.main-window .window-buttons span {
+  width: 18px;
+  height: 18px;
+}
+
+.main-window .window-body {
+  padding: 40px 30px;
+}
+
+.main-window h2 {
+  font-size: 32px;
+  margin-bottom: 30px;
+  color: #1e5fe0;
+}
+
+.main-window p {
+  font-size: 16px;
+  line-height: 2;
+  margin-bottom: 40px;
+  max-width: 900px;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.main-window .buttons {
+  margin-bottom: 50px;
+}
+
+.main-window .buttons button {
+  font-size: 18px;
+  padding: 20px 40px;
+}
+
+.main-window .visitantes {
+  font-size: 18px;
+  margin-top: 40px;
+}
+
+.main-window .visitantes span {
+  padding: 8px 16px;
+  margin: 6px;
+  font-size: 18px;
+}
+
+.window-header {
+  background: #1e5fe0;
+  color: white;
+  padding: 12px 16px;
+  font-size: 14px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-bottom: 3px solid black;
+}
+
+.window-buttons {
+  display: flex;
+  gap: 6px;
+}
+
+.window-buttons span {
+  width: 14px;
+  height: 14px;
+  border-radius: 50%;
+  display: inline-block;
+}
+
+.red {
+  background: #ff5c5c;
+}
+
+.yellow {
+  background: #ffbd4c;
+}
+
+.green {
+  background: #00ca56;
+}
+
+.window-body {
+  padding: 30px;
+  text-align: center;
+}
+
+/* Botões principais */
+.buttons {
+  display: flex;
+  justify-content: center;
+  gap: 30px;
+  margin-bottom: 40px;
+}
+
+.buttons button {
+  background: white;
+  border: 3px solid black;
+  padding: 15px 30px;
+  font-family: 'Press Start 2P', cursive;
+  font-size: 14px;
+  cursor: pointer;
+  box-shadow: 4px 4px 0px #000;
+  transition: all 0.2s ease;
+}
+
+.buttons button:hover {
+  background: #f0f0f0;
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #000;
+}
+
+/* Visitantes */
+.visitantes {
+  font-size: 16px;
+  margin-top: 25px;
+}
+
+.visitantes span {
+  background: black;
+  color: #00ff00;
+  padding: 5px 12px;
+  margin: 4px;
+  font-size: 16px;
+  display: inline-block;
+  min-width: 20px;
+}
+
+/* Seções secundárias */
+.about-section {
+  padding: 20px;
+  text-align: left;
+}
+
+.about-text h3,
+.experience-text h3 {
+  font-size: 24px;
+  color: #1e5fe0;
+  margin-bottom: 20px;
+}
+
+.about-text p {
+  margin-bottom: 15px;
+  line-height: 1.8;
+}
+
+/* Cards de Experiência */
+.experience-cards {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(280px, 1fr));
+  gap: 25px;
+  margin-top: 30px;
+}
+
+.exp-card {
+  background: #f0f0f0;
+  border: 3px solid black;
+  box-shadow: 4px 4px 0px #000;
+  overflow: hidden;
+  transition: all 0.2s ease;
+}
+
+.exp-card:hover {
+  transform: translate(-2px, -2px);
+  box-shadow: 6px 6px 0px #000;
+}
+
+.exp-card-header {
+  background: #1e5fe0;
+  color: white;
+  padding: 10px;
+  border-bottom: 3px solid black;
+  text-align: center;
+}
+
+.exp-card-body {
+  padding: 20px;
+}
+
+.exp-card-body h4 {
+  font-size: 18px;
+  color: #1e5fe0;
+  margin-bottom: 10px;
+}
+
+.exp-card-body .company {
+  font-size: 14px;
+  color: #444;
+  margin-bottom: 15px;
+  border-bottom: 2px solid #ddd;
+  padding-bottom: 10px;
+}
+
+.exp-card-body ul {
+  list-style: none;
+  padding: 0;
+}
+
+.exp-card-body li {
+  font-size: 14px;
+  margin-bottom: 8px;
+  padding-left: 20px;
+  position: relative;
+}
+
+.exp-card-body li:before {
+  content: ">";
+  position: absolute;
+  left: 0;
+  color: #1e5fe0;
+  font-weight: bold;
+}
+
+/* Animações de entrada */
+.hidden-section {
+  opacity: 0;
+  transform: translateY(50px);
+  transition: all 0.8s ease;
+}
+
+.show-section {
+  opacity: 1;
+  transform: translateY(0);
+}
+
+/* Responsivo */
+@media (max-width: 768px) {
+  body {
+    padding: 20px 10px;
+  }
+
+  .title-container {
+    flex-direction: column;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 20px;
+  }
+
+  .experience-cards {
+    grid-template-columns: 1fr;
+  }
+}
+
+@media (max-width: 1024px) {
+  .experience-cards {
+    grid-template-columns: 1fr;
+  }
+}

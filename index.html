@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Gabriel Lima | Portfólio</title>
+    <link
+      href="https://fonts.googleapis.com/css2?family=Press+Start+2P&display=swap"
+      rel="stylesheet"
+    />
+    <link rel="stylesheet" href="style.css" />
+    <link rel="icon" type="image/png" href="assets/directory_closed-4.png" />
+  </head>
+  <body>
+    <header>
+      <div class="title-container">
+        <img
+          src="assets/computer1.png"
+          alt="Computador Pixel Art"
+          class="title-emoji"
+        />
+        <h1>Olá!! Eu sou Gabriel Lima</h1>
+      </div>
+      <div class="social-icons">
+        <a href="https://github.com/neogabe" target="_blank">
+          <img src="assets/github.png" alt="GitHub" class="social-icon" />
+        </a>
+        <a href="https://www.linkedin.com/in/glima-1/" target="_blank">
+          <img src="assets/linkedin.png" alt="LinkedIn" class="social-icon" />
+        </a>
+      </div>
+    </header>
+
+    <main class="main-content">
+      <section class="window main-window">
+        <div class="window-header">
+          <div class="window-buttons">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+          <span class="window-title">Bem-vindo!</span>
+        </div>
+        <div class="window-body">
+          <h2>Desenvolvedor Full Stack</h2>
+          <p>
+            Sou um desenvolvedor de software apaixonado por criar experiências
+            incríveis, melhorando a interação das pessoas com a tecnologia de
+            forma positiva, humanizada e inclusiva.
+          </p>
+          <div class="buttons">
+            <button onclick="scrollToSection('experience-section')">
+              Experiências
+            </button>
+            <button>Fale Comigo</button>
+          </div>
+          <div class="visitantes">
+            Visitantes:
+            <span>1</span>
+            <span>3</span>
+            <span>0</span>
+            <span>2</span>
+            <span>1</span>
+          </div>
+        </div>
+      </section>
+
+      <section class="window hidden-section">
+        <div class="window-header">
+          <div class="window-buttons">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+          <span class="window-title">Sobre Mim</span>
+        </div>
+        <div class="window-body about-section">
+          <div class="about-text">
+            <p>
+              Oi! Me chamo Gabriel e sou apaixonado por tecnologia desde
+              pequeno. Comecei mexendo em jogos antigos e hoje transformo ideias
+              em código. Meu objetivo é criar sites e sistemas que façam
+              diferença na vida das pessoas.
+            </p>
+            <p>
+              Como desenvolvedor Full Stack, trabalho tanto no visual dos sites
+              quanto nos sistemas por trás deles. Uso tecnologias como React,
+              Node.js e Java para criar soluções que funcionam bem e são fáceis
+              de usar.
+            </p>
+            <p>
+              Adoro aprender coisas novas e compartilhar o que sei - inclusive
+              já fui professor de inglês! Acredito que tecnologia é sobre
+              pessoas, não apenas sobre código.
+            </p>
+          </div>
+        </div>
+      </section>
+
+      <section class="window hidden-section" id="experience-section">
+        <div class="window-header">
+          <div class="window-buttons">
+            <span class="red"></span>
+            <span class="yellow"></span>
+            <span class="green"></span>
+          </div>
+          <span class="window-title">Experiência Profissional</span>
+        </div>
+        <div class="window-body">
+          <div class="experience-cards">
+            <div class="exp-card">
+              <div class="exp-card-header">
+                <span class="exp-date">2024 - Atual</span>
+              </div>
+              <div class="exp-card-body">
+                <h4>Analista de Integrações</h4>
+                <p class="company">RD Station</p>
+                <ul>
+                  <li>Desenvolvimento de integrações entre plataformas</li>
+                  <li>Testes de interoperabilidade entre sistemas</li>
+                  <li>Criação de APIs RESTful</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-card-header">
+                <span class="exp-date">2023 - 2024</span>
+              </div>
+              <div class="exp-card-body">
+                <h4>Desenvolvedor de Software</h4>
+                <p class="company">Neoris</p>
+                <ul>
+                  <li>
+                    Desenvolvimento de soluções full stack com Java/Spring Boot
+                  </li>
+                  <li>Front-end com Typescript/React</li>
+                  <li>Identificação de vulnerabilidades críticas</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-card-header">
+                <span class="exp-date">2016 - 2024</span>
+              </div>
+              <div class="exp-card-body">
+                <h4>Técnico Especialista III</h4>
+                <p class="company">Dasa</p>
+                <ul>
+                  <li>Análise de KPIs da anatomia patológica</li>
+                  <li>Criação de dashboards em Power BI/Tableau</li>
+                  <li>Aplicação de metodologias de melhoria contínua</li>
+                </ul>
+              </div>
+            </div>
+
+            <div class="exp-card">
+              <div class="exp-card-header">
+                <span class="exp-date">2015 - 2016</span>
+              </div>
+              <div class="exp-card-body">
+                <h4>Professor de Inglês</h4>
+                <p class="company">Yes Idiomas</p>
+                <ul>
+                  <li>Ministrar aulas conforme metodologia adotada</li>
+                  <li>Acompanhar desenvolvimento dos alunos</li>
+                  <li>Corrigir atividades e avaliações</li>
+                </ul>
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+    </main>
+
+    <script src="script.js"></script>
+  </body>
+</html>
