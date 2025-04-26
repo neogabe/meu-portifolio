@@ -368,27 +368,180 @@ header h1 {
 }
 
 /* Responsivo */
+/* Tablet */
+@media (max-width: 1024px) {
+  body {
+    padding: 30px 15px;
+  }
+
+  header h1 {
+    font-size: 28px;
+  }
+
+  .title-emoji {
+    width: 60px;
+    height: 60px;
+  }
+
+  .main-window {
+    margin-bottom: 60px;
+  }
+
+  .main-window h2 {
+    font-size: 26px;
+  }
+
+  .main-window p {
+    font-size: 14px;
+    line-height: 1.8;
+    margin-bottom: 30px;
+  }
+
+  .buttons button {
+    padding: 12px 24px;
+    font-size: 12px;
+  }
+
+  .window {
+    max-width: 100%;
+    margin: 0 10px;
+  }
+
+  .experience-cards {
+    grid-template-columns: repeat(2, 1fr);
+    gap: 20px;
+  }
+
+  .main-content {
+    gap: 50px;
+  }
+}
+
+/* Mobile */
 @media (max-width: 768px) {
   body {
     padding: 20px 10px;
   }
 
-  .title-container {
-    flex-direction: column;
+  header {
+    margin-bottom: 40px;
   }
 
-  .buttons {
+  header h1 {
+    font-size: 22px;
+  }
+
+  .title-container {
     flex-direction: column;
     gap: 20px;
   }
 
+  .title-emoji {
+    width: 50px;
+    height: 50px;
+  }
+
+  .social-icons {
+    gap: 15px;
+  }
+
+  .social-icon {
+    width: 28px;
+    height: 28px;
+  }
+
+  .main-window {
+    margin-bottom: 40px;
+    transform: scale(1);
+  }
+
+  .main-window h2 {
+    font-size: 22px;
+    margin-bottom: 20px;
+  }
+
+  .main-window p {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 25px;
+  }
+
+  .window-header {
+    padding: 8px 12px;
+    font-size: 12px;
+  }
+
+  .window-buttons span {
+    width: 12px;
+    height: 12px;
+  }
+
+  .buttons {
+    flex-direction: column;
+    gap: 15px;
+  }
+
+  .buttons button {
+    width: 100%;
+    padding: 10px 20px;
+    font-size: 11px;
+  }
+
+  .visitantes {
+    font-size: 12px;
+  }
+
+  .visitantes span {
+    padding: 4px 8px;
+    margin: 3px;
+    font-size: 12px;
+  }
+
   .experience-cards {
     grid-template-columns: 1fr;
+    gap: 15px;
+  }
+
+  .exp-card-body h4 {
+    font-size: 14px;
+  }
+
+  .exp-card-body .company {
+    font-size: 12px;
+  }
+
+  .exp-card-body li {
+    font-size: 12px;
+    margin-bottom: 6px;
+  }
+
+  .about-text p {
+    font-size: 12px;
+    line-height: 1.6;
+    margin-bottom: 12px;
+  }
+
+  .main-content {
+    gap: 30px;
+  }
+
+  .window {
+    margin: 0 5px;
+    box-shadow: 4px 4px 0px #555;
   }
 }
 
-@media (max-width: 1024px) {
-  .experience-cards {
-    grid-template-columns: 1fr;
+/* Para telas muito pequenas */
+@media (max-width: 360px) {
+  header h1 {
+    font-size: 18px;
+  }
+
+  .main-window h2 {
+    font-size: 18px;
+  }
+
+  .window-body {
+    padding: 20px 15px;
   }
 }
